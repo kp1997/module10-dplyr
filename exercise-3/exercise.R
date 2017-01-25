@@ -15,10 +15,10 @@ devtools::install_github("hadley/fueleconomy")
 library(fueleconomy)
 
 # You should have have access to the vehicles data.frame
-
-
+View(vehicles)
+val <- filter(vehicles, make == 'Acura')
 # Which Accura model has the best hwy MPG in 2015? (without method chaining)
-
+BestAc <- filter(vehicles, make == 'Acura', year == 2015)
 
 # Which Accura model has the best hwy MPG in 2015? (nesting functions)
 
